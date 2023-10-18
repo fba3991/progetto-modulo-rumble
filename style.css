@@ -1,10 +1,11 @@
 :root{
     font-size: 1rem;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:sans-serif
 }
 *{
     margin: 0;
     padding: 0;
+    
 }
 body{
     width: 100vw;
@@ -13,7 +14,6 @@ body{
 grid-template-areas: 
 "he he"
 "as na"
-"as ma"
 "as ma"
 "as ma";
 grid-template-columns: 80px 1fr;
@@ -24,7 +24,7 @@ body>header{
  }
 body>aside{
    grid-area: as;
-   background-color: royalblue;
+   
 }
 body>nav{
     grid-area: na;
@@ -160,3 +160,59 @@ background-color: rgb(255, 244, 244);
 }
 
 
+
+/* ----------ASIDE--------- */
+body>aside{
+  overflow: auto;  
+ 
+}
+aside>ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+    gap: 1rem;
+     
+}
+ aside>hr{
+    margin-top: 40px;
+} 
+
+.center{
+    margin-bottom: 20px;
+    margin-top:40px;
+    text-align: center;
+}
+
+.logoimg>ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 20px;
+    list-style-type: none;
+    border-radius: 20%;
+}
+
+
+.theme>ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+    gap: 1rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    list-style-type: none;
+} 
+
+ul>:hover{
+    cursor: pointer;
+    background-color: #fcf6f6;
+    border: 1px solid;
+    border-radius: 10%;
+    width: 80%;
+}
+/* ----------NAV-------------- */
