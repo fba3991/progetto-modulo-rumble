@@ -17,7 +17,7 @@ grid-template-areas:
 "as ma"
 "as ma";
 grid-template-columns: 80px 1fr;
-grid-template-rows:70px 60px 1fr;}
+grid-template-rows:70px 60px 1fr 30px;}
 body>header{
   grid-area: he;
   border: 1px solid rgb(235, 227, 227);
@@ -38,6 +38,7 @@ body>nav{
     display: flex;
     flex-direction: column;
 }
+
 
 /* -----------HEADER-------------- */
 body>header{
