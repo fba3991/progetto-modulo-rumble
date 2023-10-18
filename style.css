@@ -15,9 +15,9 @@ grid-template-areas:
 "as na"
 "as ma"
 "as ma"
-"as fo";
-grid-template-columns: 80px;
-grid-template-rows:70px 60px 500px;}
+"as ma";
+grid-template-columns: 80px 1fr;
+grid-template-rows:70px 60px 1fr;}
 body>header{
   grid-area: he;
   
@@ -32,7 +32,8 @@ body>nav{
 }
  body>main{
     grid-area: ma;
-    
+    display: flex;
+    flex-direction: column;
 }
 body>footer{
     grid-area: fo;
@@ -52,7 +53,7 @@ body>header>section{
     gap: 1rem;
 }
 /* ---------generici---------- */
-section>div:last-child {
+.signin > div:last-child {
    border: 2px solid yellowgreen;
    border-radius: 2rem;
    padding: 10px ;
@@ -79,53 +80,83 @@ section>div:last-child {
 }
 /* -----------Main---------- */
 body>main{
-    overflow: auto;
+overflow: auto;
+display: flex;
+gap: 2rem;
+padding: 2rem; 
+background-color: rgb(255, 244, 244);
+}
+.text>strong{
+    display: block;
+    height: 20px;
+}
+.videorow, .text{
+    padding-left: .5rem;
+}
+.videoshorts, .text{
+    margin: 10px;
 }
 
-/* ---------MEDIA-------------- */
-/* _______MOBILE__________ */
-/* @media screen and (max-width:640px ){
-    body{
-        grid-template-columns:0 ;
-    }
-    .search>input{
-        display: none;
-    }
-    .search>button{
-        margin-left: auto;
-    }
+.caption-container{
+     display: flex;
+     padding-left: 1rems;
+}
+.profile-picture>img{
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.image-container>img{
+    border-radius: 10%;
+}
+
+.videorow{
+    display: flex;
+    background-color: rgb(255, 244, 244);
+    gap: 2rem;
    
+}
 
-} */
+
+ .homepage{
+    display: flex;
+    padding: 2rem;
+    border-radius: 2rem ;
+    align-items: center;
+} 
+.homepage>img{
+    border-radius:2%;
+}
+.homepage>h4{
+    font-size: 2rem;
+    padding: 2rem;
+    font-family:sans-serif;
+}
+
+/* ------------SHORTS------- */
 
 
-/* -----------TABLET----------- */
-/* _______MOBILE__________ */
-/* @media screen and (max-width:940px ){
-    body{
-        grid-template-columns:0 ;
-    }
-    .search>input{
-        display: none;
-    }
-    .search>button{
-        margin-left: auto;
-    }
-   
+.videoshorts{
+    display: flex;
+    gap: 2rem;
+    background-color: rgb(255, 244, 244);
+    background-color: ;
+}
+.videoshorts, .image-container{
+    border-radius: 5%;
+}
+.videoshorts, .text{
+  gap: 1rem;
+}
 
-} */
 
-/* -----------DESK---------- *//* _______MOBILE__________ */
-/* @media screen and (max-width:1200px ){
-    body{
-        grid-template-columns:0 ;
-    }
-    .search>input{
-        display: none;
-    }
-    .search>button{
-        margin-left: auto;
-    }
-   
+------------------------------------
+.live{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(247, 250, 250, 0.803);
+}
+.bottom>img{
+    border-radius: 50%;
+}
 
-} */
+
