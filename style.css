@@ -20,7 +20,7 @@ grid-template-columns: 80px 1fr;
 grid-template-rows:70px 60px 1fr;}
 body>header{
   grid-area: he;
-  
+  border: 1px solid rgb(235, 227, 227);
  }
 body>aside{
    grid-area: as;
@@ -28,17 +28,17 @@ body>aside{
 }
 body>nav{
     grid-area: na;
-    background-color: brown;
+    border: 1px solid rgb(235, 227, 227);
+
+    
 }
  body>main{
+    border: 1px solid rgb(235, 227, 227);
     grid-area: ma;
     display: flex;
     flex-direction: column;
 }
-body>footer{
-    grid-area: fo;
-    background-color:green;
-}  
+
 /* -----------HEADER-------------- */
 body>header{
     display: flex;
@@ -216,3 +216,30 @@ ul>:hover{
     width: 80%;
 }
 /* ----------NAV-------------- */
+body>nav{
+    overflow: auto;
+    
+}
+nav{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 0.5rem;
+     
+    
+   
+   
+}
+nav>div{
+    background-color: transparent;
+    border-radius: 30px; 
+    padding: .3rem;
+}
+ nav>div:hover{
+    cursor: pointer;
+    background-color:red;
+    color : Blue;
+    text-decoration : none;
+    font-weight : bold;
+} 
+ 
