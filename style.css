@@ -1,0 +1,131 @@
+:root{
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+grid-template-areas: 
+"he he"
+"as na"
+"as ma"
+"as ma"
+"as fo";
+grid-template-columns: 80px;
+grid-template-rows:70px 60px 500px;}
+body>header{
+  grid-area: he;
+  
+ }
+body>aside{
+   grid-area: as;
+   background-color: royalblue;
+}
+body>nav{
+    grid-area: na;
+    background-color: brown;
+}
+ body>main{
+    grid-area: ma;
+    
+}
+body>footer{
+    grid-area: fo;
+    background-color:green;
+}  
+/* -----------HEADER-------------- */
+body>header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+body>header>section{
+    display: flex;
+    align-items: center;
+}
+.burger, .signin {
+    gap: 1rem;
+}
+/* ---------generici---------- */
+section>div:last-child {
+   border: 2px solid yellowgreen;
+   border-radius: 2rem;
+   padding: 10px ;
+}
+.search>input{
+    height: 28px;
+    border: 1px solid grey;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius:1rem ;
+    border-bottom-right-radius: 1rem;
+    width: 400px;
+    padding: 0 1rem;
+
+}
+.search>button{
+    height: 30px;
+    border: 1px solid transparent;
+    padding: 0rem .75rem;
+    background-color: transparent;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    
+}
+/* -----------Main---------- */
+body>main{
+    overflow: auto;
+}
+
+/* ---------MEDIA-------------- */
+/* _______MOBILE__________ */
+/* @media screen and (max-width:640px ){
+    body{
+        grid-template-columns:0 ;
+    }
+    .search>input{
+        display: none;
+    }
+    .search>button{
+        margin-left: auto;
+    }
+   
+
+} */
+
+
+/* -----------TABLET----------- */
+/* _______MOBILE__________ */
+/* @media screen and (max-width:940px ){
+    body{
+        grid-template-columns:0 ;
+    }
+    .search>input{
+        display: none;
+    }
+    .search>button{
+        margin-left: auto;
+    }
+   
+
+} */
+
+/* -----------DESK---------- *//* _______MOBILE__________ */
+/* @media screen and (max-width:1200px ){
+    body{
+        grid-template-columns:0 ;
+    }
+    .search>input{
+        display: none;
+    }
+    .search>button{
+        margin-left: auto;
+    }
+   
+
+} */
