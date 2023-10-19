@@ -1,38 +1,45 @@
-:root{
+:root {
     font-size: 1rem;
-    font-family:sans-serif
+    font-family: sans-serif
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
-    
+
 }
-body{
+
+body {
     width: 100vw;
     height: 100vh;
     display: grid;
-grid-template-areas: 
-"he he"
-"as na"
-"as ma"
-"as ma";
-grid-template-columns: 80px 1fr;
-grid-template-rows:70px 60px 1fr 30px;}
-body>header{
-  grid-area: he;
-  border: 1px solid rgb(235, 227, 227);
- }
-body>aside{
-   grid-area: as;
-   
+    grid-template-areas:
+        "he he"
+        "as na"
+        "as ma"
+        "as ma";
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: 70px 60px 1fr 30px;
 }
-body>nav{
+
+body>header {
+    grid-area: he;
+    border: 1px solid rgb(235, 227, 227);
+}
+
+body>aside {
+    grid-area: as;
+
+}
+
+body>nav {
     grid-area: na;
     border: 1px solid rgb(235, 227, 227);
 
-    
+
 }
- body>main{
+
+body>main {
     border: 1px solid rgb(235, 227, 227);
     grid-area: ma;
     display: flex;
@@ -41,152 +48,174 @@ body>nav{
 
 
 /* -----------HEADER-------------- */
-body>header{
+body>header {
     display: flex;
     justify-content: space-between;
     padding: 0 1.5rem;
 }
-body>header>section{
+
+body>header>section {
     display: flex;
     align-items: center;
 }
-.burger, .signin {
+
+.burger,
+.signin {
     gap: 1rem;
 }
+
 /* ---------generici---------- */
-.signin > div:last-child {
-   border: 2px solid yellowgreen;
-   border-radius: 2rem;
-   padding: 10px ;
+.signin>div:last-child {
+    border: 2px solid yellowgreen;
+    border-radius: 2rem;
+    padding: 10px;
 }
-.search>input{
+
+.search>input {
     height: 28px;
     border: 1px solid grey;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
-    border-top-right-radius:1rem ;
+    border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     width: 400px;
     padding: 0 1rem;
 
 }
-.search>button{
+
+.search>button {
     height: 30px;
     border: 1px solid transparent;
     padding: 0rem .75rem;
     background-color: transparent;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    
+
 }
+
 /* -----------Main---------- */
-body>main{
-overflow: auto;
-display: flex;
-gap: 2rem;
-padding: 2rem; 
-background-color: rgb(255, 244, 244);
+body>main {
+    overflow: auto;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: rgb(255, 244, 244);
 }
-.text>strong{
+
+.text>strong {
     display: block;
     height: 20px;
 }
-.videorow, .text{
+
+.videorow,
+.text {
     padding-left: .5rem;
 }
-.videoshorts, .text{
+
+.videoshorts,
+.text {
     margin: 10px;
 }
 
-.caption-container{
-     display: flex;
-     padding-left: 1rems;
+.caption-container {
+    display: flex;
+    padding-left: 1rems;
 }
-.profile-picture>img{
+
+.profile-picture>img {
     border-radius: 50%;
     margin-top: 30px;
 }
-.image-container>img{
+
+.image-container>img {
     border-radius: 10%;
 }
 
-.videorow{
+.videorow {
     display: flex;
     background-color: rgb(255, 244, 244);
     gap: 2rem;
-   
+
 }
 
 
- .homepage{
+.homepage {
     display: flex;
     padding: 2rem;
-    border-radius: 2rem ;
+    border-radius: 2rem;
     align-items: center;
-} 
-.homepage>img{
-    border-radius:2%;
 }
-.homepage>h4{
+
+.homepage>img {
+    border-radius: 2%;
+}
+
+.homepage>h4 {
     font-size: 2rem;
     padding: 2rem;
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
 
 /* ------------SHORTS------- */
 
 
-.videoshorts{
+.videoshorts {
     display: flex;
     gap: 2rem;
     background-color: rgb(255, 244, 244);
     background-color: ;
 }
-.videoshorts, .image-container{
+
+.videoshorts,
+.image-container {
     border-radius: 5%;
 }
-.videoshorts, .text{
-  gap: 1rem;
+
+.videoshorts,
+.text {
+    gap: 1rem;
 }
 
 
-------------------------------------
-.live{
+------------------------------------ .live {
     display: flex;
     flex-direction: column;
     background-color: rgba(247, 250, 250, 0.803);
 }
-.bottom>img{
+
+.bottom>img {
     border-radius: 50%;
 }
 
 
 
 /* ----------ASIDE--------- */
-body>aside{
-  overflow: auto;  
- 
+body>aside {
+    overflow: auto;
+
 }
-aside>ul{
+
+aside>ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     list-style-type: none;
     gap: 1rem;
-     
-}
- aside>hr{
-    margin-top: 40px;
-} 
 
-.center{
+}
+
+aside>hr {
+    margin-top: 40px;
+}
+
+.center {
     margin-bottom: 20px;
-    margin-top:40px;
+    margin-top: 40px;
     text-align: center;
 }
 
-.logoimg>ul{
+.logoimg>ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -197,7 +226,7 @@ aside>ul{
 }
 
 
-.theme>ul{
+.theme>ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -207,42 +236,47 @@ aside>ul{
     margin-top: 40px;
     margin-bottom: 20px;
     list-style-type: none;
-} 
+}
 
-ul>:hover{
+ul>:hover {
     cursor: pointer;
     background-color: #fcf6f6;
     border: 1px solid;
     border-radius: 10%;
     width: 80%;
 }
+
 /* ----------NAV-------------- */
-body>nav{
+body>nav {
     overflow: auto;
-    
+
 }
-nav{
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     padding: 0 0.5rem;
-     
-    
-   
-   
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+
+
+
+
 }
-nav>div{
+
+nav>div {
     background-color: transparent;
-    border-radius: 30px; 
+    border-radius: 30px;
     padding: .3rem;
 }
- nav>div:hover{
+
+nav>div:hover {
     cursor: pointer;
-    background-color:red;
-    color : Blue;
-    text-decoration : none;
-    font-weight : bold;
-} 
+    background-color: red;
+    color: Blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 /*  ---------------Media--------------- */
 
 /* -------Smarthphone---- */
