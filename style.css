@@ -17,8 +17,8 @@ body {
         "he he"
         "as na"
         "as ma"
-        "as ma";
-    grid-template-columns: 80px 1fr;
+        ;
+    grid-template-columns: 80px ;
     grid-template-rows: 70px 60px 1fr 30px;
 }
 
@@ -263,7 +263,7 @@ nav {
 
 }
 
-nav>div {
+nav > div {
     background-color: transparent;
     border-radius: 30px;
     padding: .3rem;
@@ -279,19 +279,75 @@ nav>div:hover {
 
 /*  ---------------Media--------------- */
 
-/* -------Smarthphone---- */
-/* @media screen and (min-width:480){
-    
-   body>aside{
-    display: none;
-   }
-   .search>input{
-    display: none;
-   }
-   
-} */
+@media screen and (max-width: 768px) {
+    body {
+        grid-template-columns:;
+        grid-template-rows: 70px 60px 1fr 30px;
+    }
 
-/* -----------TABLTET---------- */
+    body>header {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
 
+    body>nav {
+        display: flex;
+        justify-content: space-around;
+    }
 
-/* ----------DESk--------------- */
+    body>aside {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    body>main {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body>header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search>input {
+        width: 100%;
+    }
+
+    .videoshorts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .videorow,
+    .text {
+        padding-left: 0;
+    }
+
+    .image-container>img {
+        width: 100%;
+    }
+
+    .profile-picture>img {
+        margin-top: 0;
+    }
+
+    .live {
+        padding: 1rem;
+    }
+
+    body>aside {
+        padding: 1rem;
+    }
+
+    aside>ul,
+    .logoimg>ul,
+    .theme>ul {
+        flex-direction: row;
+    }
+
+    ul>:hover {
+        width: auto;
+    }
+}
