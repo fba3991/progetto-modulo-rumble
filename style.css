@@ -246,15 +246,16 @@ nav>div{
 /*  ---------------Media--------------- */
 
 /* -------Smarthphone---- */
-@media screen and (min-width:480){
+/* @media screen and (min-width:480){
     
    body>aside{
     display: none;
    }
-   .search{
+   .search>input{
     display: none;
    }
-}
+   
+} */
 
 /* -----------TABLTET---------- */
 
